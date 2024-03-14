@@ -20,3 +20,13 @@ const temas = [
     "La perseverancia es la clave del éxito."]
 ]
 
+const randomMessage = ()=>{
+    let n = randomNum(5);
+    let message = `Tu animal favorito es ${temas[0][n]}`;
+    message += `\n Tu deporte favorito es ${temas[1][n]}`;
+    message += `\n Tu frase que te identifica es: ${temas[2][n]}`;
+    return message;
+}
+
+let m = randomMessage();
+console.log(m);
